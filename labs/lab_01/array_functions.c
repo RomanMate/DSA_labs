@@ -29,7 +29,7 @@ int* allocateMemoryForArray1(int n) {
 
 void allocateMemoryForArray2(int n, int** dpArray)
 {
-    dpArray = (int)malloc(n * sizeof(int));
+    *dpArray = (int*)malloc(n * sizeof(int));
     if (!(*dpArray))
     {
         printf("Memory allocation error");
@@ -44,6 +44,7 @@ void readArray(int* pn, int** dpArray, const char* input)
         exit(-2);
     }
     scanf("%i", pn);
+
     allocateMemoryForArray2(*pn, dpArray);
     for (int i = 0; i < *pn; i++)
     {
