@@ -3,4 +3,6 @@ project(lab_02 C)
 
 set(CMAKE_C_STANDARD 23)
 
-add_executable(lab_02 main.c)
+add_executable(lab_02 main.c
+        array_functions..c
+        array_functions..h)
