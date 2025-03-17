@@ -4,6 +4,7 @@
 
 #ifndef VEREM_H
 #define VEREM_H
+
 typedef struct {
     int capacity;
     int top;

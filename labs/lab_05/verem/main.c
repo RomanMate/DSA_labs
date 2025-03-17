@@ -11,7 +11,11 @@ int main(void) {
     push(&stack,4);
     push(&stack,5);
     printf("\nA kivett elem erteke:%i\n",pop(&stack));
-
+    printf("\nA kivett elem erteke:%i\n",pop(&stack));
+    push(&stack,6);
+    push(&stack,7);
+    push(&stack,8);
+    printf("\nA kivett elem erteke:%i\n",pop(&stack));
 
     return 0;
 }

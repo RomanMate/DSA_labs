@@ -18,7 +18,7 @@ void destroyStack(Stack_t* stack) {
     stack=NULL;
 }
 bool isFull(Stack_t stack) {
-    return stack.top=stack.capacity-1;
+    return stack.top==stack.capacity-1;
 }
 bool isEmpty(Stack_t stack) {
     return stack.top==-1;
