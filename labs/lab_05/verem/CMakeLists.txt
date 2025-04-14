@@ -7,4 +7,7 @@ add_executable(lab_05 main.c
         verem.c
         ../../lab_06/Queue/queuef.c
         ../../lab_06/Queue/queuef.h
-        constants.h)
+        constants.h
+        ../../lab_07/Glass_circular/glass_circular_queue.c
+        ../../lab_07/Glass_circular/glass_circular_queue.h
+        ../../lab_07/Glass_circular/main.c)

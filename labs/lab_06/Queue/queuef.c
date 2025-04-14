@@ -68,7 +68,7 @@ int dequeue(Simple_Queue_t* queue)
        queue->front++;
  return save;
 }
-void display(Circular_Queue_t queue)
+void display(Simple_Queue_t queue)
 {
  if (isEmpty(queue))
  {
