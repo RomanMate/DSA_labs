@@ -1,8 +1,9 @@
 #include <stdio.h>
-#include "array_functions..h"
+#include "utils.h"
+
 int main(void) {
-    int a;
-    scanf("%i",&a);
-    printf("%i",sum(a%10,a/10));
+    int a=12;
+    printf("%i", isPrime(a));
+
     return 0;
 }

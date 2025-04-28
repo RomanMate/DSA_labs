@@ -1,9 +1,6 @@
 //
-// Created by Román Máté on 2025. 03. 24..
+// Created by balin on 2025. 03. 24..
 //
-
-#ifndef QUEUEF_H
-#define QUEUEF_H
 
 typedef struct {
     int capacity;
@@ -11,6 +8,10 @@ typedef struct {
     int rear;
     int *elements;
 }Simple_Queue_t;
+
+#ifndef SIMPLE_QUEUE_H
+#define SIMPLE_QUEUE_H
+
 /**
 * Creates the queue data structure, allocates memory for
 elements
@@ -60,4 +61,5 @@ void display(Simple_Queue_t queue);
 */
 int peek(Simple_Queue_t queue);
 
-#endif //QUEUEF_H
+
+#endif //SIMPLE_QUEUE_H
