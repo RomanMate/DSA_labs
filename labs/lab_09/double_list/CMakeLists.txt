@@ -8,4 +8,5 @@ add_executable(double_list main.c
         double_list_functions.h
         ../../lab_10/binariskeresofa/binarisfa.c
         ../../lab_10/binariskeresofa/binarisfa.h
-        ../../lab_10/operations-with-binary-search-tree/main.c)
+        ../../lab_10/operations-with-binary-search-tree/main.c
+        ../../lab_10/binariskeresofa/main.c)
