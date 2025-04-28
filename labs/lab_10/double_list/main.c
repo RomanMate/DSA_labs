@@ -17,7 +17,7 @@ Ellenőrizd, hogy a lista üres-e az isEmpty függvénnyel, és írd ki az eredm
 
 Írd ki a lista elemeit mindkét irányból.*/
     Node* head = NULL;
-    /*insertAtEnd(&head, 10);
+    insertAtEnd(&head, 10);
     insertAtEnd(&head, 20);
     insertAtEnd(&head, 30);
     insertAtBeginning(&head, 5);
@@ -26,17 +26,8 @@ Ellenőrizd, hogy a lista üres-e az isEmpty függvénnyel, és írd ki az eredm
     printf("List from beginning: ");
     printListFromBegin(head);
     printf("List from end: ");
-    printListFromEnd(head);*/
-    for(int i=1;i<=5;i++) {
-        if(i%2==0) {
-            insertAtBeginning(&head,i);
-        }
-        else {
-            insertAtEnd(&head,i);
-        }
-    }
-    printf("List from beginning: ");
-    printListFromBegin(head);
-    printf("List from end: ");
     printListFromEnd(head);
+
+
+
 }
