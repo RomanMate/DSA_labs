@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "headers/binary_search_tree.h"
+#include "binary_search_tree.h"
 #include <time.h>
 #include <stdlib.h>
 
@@ -9,8 +9,8 @@ int main() {
     Node *root = createNewNode(items[0]);
     for (int i = 1; i < n; ++i) {
         insert(root, items[i]);
-    }
-    srand(time(NULL));
+    }*/
+    /*srand(time(NULL));
     Node* root = NULL;
     for (int i = 1; i <= 10; ++i) {
         int num = rand() % 401 + 500;
@@ -19,7 +19,7 @@ int main() {
     }
     printf("\nInorder: ");
     inorderTraversal(root);
-
+    */
     /*deleteNode(root, 17);
     printf("\nInorder: ");
     inorderTraversal(root);
@@ -33,6 +33,26 @@ int main() {
     inorderTraversal(root);
 
     destroyBinaryTree(&root);*/
-
-    return 0;
-}
+        freopen("data.txt", "r", stdin);
+        Barat uj;
+        Node *head=NULL;
+        while ((scanf("%[^;];%d;%d;%d;%c;%d\n",
+        uj.nev,
+        &uj.szuletesiDatum.ev,
+        &uj.szuletesiDatum.honap,
+        &uj.szuletesiDatum.nap,
+        &uj.nem,
+        &uj.bulizas) != EOF))
+             {
+                //printf("%s\n",uj.nev);
+                 if(head==NULL) {
+                     head = createNewNode(uj);
+                 }
+                 else
+                 {
+                     insert(&head,uj);
+                 }
+             }
+        inorderTraversal(head);
+        return 0;
+    }
