@@ -5,4 +5,7 @@ set(CMAKE_C_STANDARD 23)
 
 add_executable(lab_11 main.c
         library.h
-        library.c)
+        library.c
+        ../lab_13/main.c
+        ../lab_13/operations-with-hashTable/hash_static_uj/main.c
+        ../lab_13/operations-with-hashTable/hash_static_uj/hash_table.c)
