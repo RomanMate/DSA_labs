@@ -3,5 +3,7 @@ project(operations_with_binary_search_tree C)
 
 set(CMAKE_C_STANDARD 23)
 
-add_executable(operations_with_binary_search_tree main.c headers/binary_search_tree.h headers/constants.h sources/binary_search_tree.c)
+add_executable(operations_with_binary_search_tree main.c headers/binary_search_tree.h headers/constants.h sources/binary_search_tree.c
+        ../../lab_11/library.c
+        ../../lab_11/library.h)
 include_directories(headers)
